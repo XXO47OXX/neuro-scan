@@ -1,5 +1,3 @@
-"""Tests for ablation scan logic."""
-
 import pytest
 
 from neuro_scan.config import AblationResult, NeuroScanConfig

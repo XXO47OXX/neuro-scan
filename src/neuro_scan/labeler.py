@@ -1,11 +1,3 @@
-"""Automatic layer-function labeling — the core differentiator of neuro-scan.
-
-Labels each transformer layer with a functional role based on:
-1. Ablation sensitivity (high delta = critical layer)
-2. Logit lens trajectory (when does the correct token first emerge?)
-3. Layer position heuristics (early/middle/late)
-"""
-
 from __future__ import annotations
 
 from typing import TYPE_CHECKING

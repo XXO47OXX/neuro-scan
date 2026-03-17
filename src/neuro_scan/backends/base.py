@@ -1,9 +1,3 @@
-"""Abstract backend interface for neuro-scan.
-
-Extends the layer-scan backend interface with neuroanatomy methods:
-ablation, hidden state extraction, and attention weight extraction.
-"""
-
 from __future__ import annotations
 
 from abc import ABC, abstractmethod

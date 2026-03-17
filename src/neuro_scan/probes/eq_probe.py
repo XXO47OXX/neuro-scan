@@ -1,10 +1,3 @@
-"""Emotional intelligence probe based on EQ-Bench methodology.
-
-Tests the model's ability to understand and reason about emotions,
-social situations, and human psychology. This capability maps to
-different layer circuits than mathematical reasoning.
-"""
-
 from __future__ import annotations
 
 from neuro_scan.probes.base import Probe, ProbeSample

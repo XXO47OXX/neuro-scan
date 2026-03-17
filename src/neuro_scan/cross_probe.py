@@ -1,11 +1,3 @@
-"""Cross-probe layer analysis — compare layer importance across capabilities.
-
-Runs ablation scans with multiple probes to answer:
-- Which layers are critical for math but not EQ?
-- Which layers are universally important?
-- How correlated are different probe sensitivities?
-"""
-
 from __future__ import annotations
 
 import logging

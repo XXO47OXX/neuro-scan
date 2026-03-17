@@ -1,9 +1,3 @@
-"""HuggingFace Transformers backend — reference implementation for neuro-scan.
-
-Extends the layer-scan Transformers backend with neuroanatomy methods:
-layer ablation, hidden state extraction, and attention weight extraction.
-"""
-
 from __future__ import annotations
 
 import logging

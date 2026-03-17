@@ -1,11 +1,3 @@
-"""Visualization for neuro-scan results.
-
-Generates three types of interactive HTML charts:
-A. Ablation Sensitivity Bar Chart — which layers matter most
-B. Logit Lens Trajectory Heatmap — when does the correct token emerge
-C. Attention Entropy Heatmap — which heads are focused vs diffuse
-"""
-
 from __future__ import annotations
 
 import logging

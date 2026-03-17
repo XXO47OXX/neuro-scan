@@ -1,0 +1,859 @@
+{
+  "strategy": "fast",
+  "top_k": 10,
+  "total_pairs": 58,
+  "total_evals": 928,
+  "time_seconds": 22.890584707260132,
+  "synergistic": [
+    {
+      "layer_i": 5,
+      "layer_j": 27,
+      "interaction_effect": 1.3179109009716967,
+      "joint_delta": 0.36880998347180594,
+      "individual_delta_i": -0.3868176357354969,
+      "individual_delta_j": -0.5622832817643939
+    },
+    {
+      "layer_i": 5,
+      "layer_j": 6,
+      "interaction_effect": 1.2247740085804253,
+      "joint_delta": 0.6726599206667743,
+      "individual_delta_i": -0.3868176357354969,
+      "individual_delta_j": -0.16529645217815414
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 5,
+      "interaction_effect": 0.7388085027341731,
+      "joint_delta": 0.7630636860267259,
+      "individual_delta_i": 0.4110728190280497,
+      "individual_delta_j": -0.3868176357354969
+    },
+    {
+      "layer_i": 9,
+      "layer_j": 10,
+      "interaction_effect": 0.7040391608607024,
+      "joint_delta": 0.9684187793172896,
+      "individual_delta_i": -0.07055509358178824,
+      "individual_delta_j": 0.33493471203837544
+    },
+    {
+      "layer_i": 5,
+      "layer_j": 10,
+      "interaction_effect": 0.6981660757446662,
+      "joint_delta": 0.6462831520475447,
+      "individual_delta_i": -0.3868176357354969,
+      "individual_delta_j": 0.33493471203837544
+    },
+    {
+      "layer_i": 5,
+      "layer_j": 17,
+      "interaction_effect": 0.5749180377169978,
+      "joint_delta": 0.718758705741493,
+      "individual_delta_i": -0.3868176357354969,
+      "individual_delta_j": 0.5306583037599921
+    },
+    {
+      "layer_i": 22,
+      "layer_j": 27,
+      "interaction_effect": 0.48850734343068325,
+      "joint_delta": 0.6512026803393383,
+      "individual_delta_i": 0.7249786186730489,
+      "individual_delta_j": -0.5622832817643939
+    },
+    {
+      "layer_i": 5,
+      "layer_j": 22,
+      "interaction_effect": 0.4478231483954005,
+      "joint_delta": 0.7859841313329525,
+      "individual_delta_i": -0.3868176357354969,
+      "individual_delta_j": 0.7249786186730489
+    },
+    {
+      "layer_i": 5,
+      "layer_j": 11,
+      "interaction_effect": 0.3971798191778362,
+      "joint_delta": 0.8066173268016428,
+      "individual_delta_i": -0.3868176357354969,
+      "individual_delta_j": 0.7962551433593035
+    },
+    {
+      "layer_i": 5,
+      "layer_j": 18,
+      "interaction_effect": 0.3503131540128379,
+      "joint_delta": 0.7047516567035927,
+      "individual_delta_i": -0.3868176357354969,
+      "individual_delta_j": 0.7412561384262517
+    },
+    {
+      "layer_i": 10,
+      "layer_j": 27,
+      "interaction_effect": 0.29610356616012723,
+      "joint_delta": 0.06875499643410876,
+      "individual_delta_i": 0.33493471203837544,
+      "individual_delta_j": -0.5622832817643939
+    },
+    {
+      "layer_i": 18,
+      "layer_j": 27,
+      "interaction_effect": 0.244873825452828,
+      "joint_delta": 0.4238466821146858,
+      "individual_delta_i": 0.7412561384262517,
+      "individual_delta_j": -0.5622832817643939
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 10,
+      "interaction_effect": 0.21582456075702794,
+      "joint_delta": 0.9618320918234531,
+      "individual_delta_i": 0.4110728190280497,
+      "individual_delta_j": 0.33493471203837544
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 27,
+      "interaction_effect": 0.14651136052384572,
+      "joint_delta": -0.004699102212498474,
+      "individual_delta_i": 0.4110728190280497,
+      "individual_delta_j": -0.5622832817643939
+    },
+    {
+      "layer_i": 16,
+      "layer_j": 17,
+      "interaction_effect": 0.08906631753779948,
+      "joint_delta": 0.5821700993692502,
+      "individual_delta_i": -0.03755452192854136,
+      "individual_delta_j": 0.5306583037599921
+    },
+    {
+      "layer_i": 22,
+      "layer_j": 23,
+      "interaction_effect": 0.0518449806550052,
+      "joint_delta": 0.6199910503055435,
+      "individual_delta_i": 0.7249786186730489,
+      "individual_delta_j": -0.15683254902251065
+    }
+  ],
+  "redundant": [
+    {
+      "layer_i": 0,
+      "layer_j": 1,
+      "interaction_effect": -2.0630240973696345,
+      "joint_delta": -0.11630685094860382,
+      "individual_delta_i": 0.2336041968083009,
+      "individual_delta_j": 1.7131130496127298
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 7,
+      "interaction_effect": -1.860815538544557,
+      "joint_delta": 1.217096281470731,
+      "individual_delta_i": 1.7131130496127298,
+      "individual_delta_j": 1.3647987704025581
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 18,
+      "interaction_effect": -1.5357273389672628,
+      "joint_delta": 0.9186418490717188,
+      "individual_delta_i": 1.7131130496127298,
+      "individual_delta_j": 0.7412561384262517
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 11,
+      "interaction_effect": -1.4284264122106833,
+      "joint_delta": 1.08094178076135,
+      "individual_delta_i": 1.7131130496127298,
+      "individual_delta_j": 0.7962551433593035
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 22,
+      "interaction_effect": -1.2780225647584302,
+      "joint_delta": 1.1600691035273485,
+      "individual_delta_i": 1.7131130496127298,
+      "individual_delta_j": 0.7249786186730489
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 17,
+      "interaction_effect": -1.2609828429849586,
+      "joint_delta": 0.9827885103877634,
+      "individual_delta_i": 1.7131130496127298,
+      "individual_delta_j": 0.5306583037599921
+    },
+    {
+      "layer_i": 7,
+      "layer_j": 18,
+      "interaction_effect": -1.2008935201301938,
+      "joint_delta": 0.9051613886986161,
+      "individual_delta_i": 1.3647987704025581,
+      "individual_delta_j": 0.7412561384262517
+    },
+    {
+      "layer_i": 7,
+      "layer_j": 22,
+      "interaction_effect": -1.1231772592000198,
+      "joint_delta": 0.9666001298755873,
+      "individual_delta_i": 1.3647987704025581,
+      "individual_delta_j": 0.7249786186730489
+    },
+    {
+      "layer_i": 7,
+      "layer_j": 11,
+      "interaction_effect": -1.0768478203499399,
+      "joint_delta": 1.0842060934119218,
+      "individual_delta_i": 1.3647987704025581,
+      "individual_delta_j": 0.7962551433593035
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 7,
+      "interaction_effect": -1.054192795047129,
+      "joint_delta": 0.7216787943834788,
+      "individual_delta_i": 0.4110728190280497,
+      "individual_delta_j": 1.3647987704025581
+    },
+    {
+      "layer_i": 7,
+      "layer_j": 17,
+      "interaction_effect": -1.0435399257257814,
+      "joint_delta": 0.8519171484367689,
+      "individual_delta_i": 1.3647987704025581,
+      "individual_delta_j": 0.5306583037599921
+    },
+    {
+      "layer_i": 18,
+      "layer_j": 22,
+      "interaction_effect": -1.008073517412413,
+      "joint_delta": 0.4581612396868877,
+      "individual_delta_i": 0.7412561384262517,
+      "individual_delta_j": 0.7249786186730489
+    },
+    {
+      "layer_i": 7,
+      "layer_j": 10,
+      "interaction_effect": -0.920738184300717,
+      "joint_delta": 0.7789952981402166,
+      "individual_delta_i": 1.3647987704025581,
+      "individual_delta_j": 0.33493471203837544
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 10,
+      "interaction_effect": -0.8611537162651075,
+      "joint_delta": 1.1868940453859977,
+      "individual_delta_i": 1.7131130496127298,
+      "individual_delta_j": 0.33493471203837544
+    },
+    {
+      "layer_i": 11,
+      "layer_j": 17,
+      "interaction_effect": -0.8424976578971837,
+      "joint_delta": 0.4844157892221119,
+      "individual_delta_i": 0.7962551433593035,
+      "individual_delta_j": 0.5306583037599921
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 4,
+      "interaction_effect": -0.8372500644618412,
+      "joint_delta": 1.2869358041789383,
+      "individual_delta_i": 1.7131130496127298,
+      "individual_delta_j": 0.4110728190280497
+    },
+    {
+      "layer_i": 11,
+      "layer_j": 18,
+      "interaction_effect": -0.8128965214491473,
+      "joint_delta": 0.7246147603364079,
+      "individual_delta_i": 0.7962551433593035,
+      "individual_delta_j": 0.7412561384262517
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 2,
+      "interaction_effect": -0.7100960865209345,
+      "joint_delta": 1.2685907985578524,
+      "individual_delta_i": 1.7131130496127298,
+      "individual_delta_j": 0.26557383546605706
+    },
+    {
+      "layer_i": 11,
+      "layer_j": 22,
+      "interaction_effect": -0.6712679899646901,
+      "joint_delta": 0.8499657720676623,
+      "individual_delta_i": 0.7962551433593035,
+      "individual_delta_j": 0.7249786186730489
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 18,
+      "interaction_effect": -0.6224273765546968,
+      "joint_delta": 0.5299015808996046,
+      "individual_delta_i": 0.4110728190280497,
+      "individual_delta_j": 0.7412561384262517
+    },
+    {
+      "layer_i": 17,
+      "layer_j": 22,
+      "interaction_effect": -0.5620340839959681,
+      "joint_delta": 0.6936028384370729,
+      "individual_delta_i": 0.5306583037599921,
+      "individual_delta_j": 0.7249786186730489
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 17,
+      "interaction_effect": -0.47190021186543163,
+      "joint_delta": 0.4698309109226102,
+      "individual_delta_i": 0.4110728190280497,
+      "individual_delta_j": 0.5306583037599921
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 27,
+      "interaction_effect": -0.4635612169877277,
+      "joint_delta": 0.6872685508606082,
+      "individual_delta_i": 1.7131130496127298,
+      "individual_delta_j": -0.5622832817643939
+    },
+    {
+      "layer_i": 7,
+      "layer_j": 27,
+      "interaction_effect": -0.42369360558660674,
+      "joint_delta": 0.3788218830515575,
+      "individual_delta_i": 1.3647987704025581,
+      "individual_delta_j": -0.5622832817643939
+    },
+    {
+      "layer_i": 11,
+      "layer_j": 12,
+      "interaction_effect": -0.41236872191075236,
+      "joint_delta": 0.5107849214691669,
+      "individual_delta_i": 0.7962551433593035,
+      "individual_delta_j": 0.12689850002061576
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 22,
+      "interaction_effect": -0.39486618313821964,
+      "joint_delta": 0.741185254562879,
+      "individual_delta_i": 0.4110728190280497,
+      "individual_delta_j": 0.7249786186730489
+    },
+    {
+      "layer_i": 17,
+      "layer_j": 18,
+      "interaction_effect": -0.3718447648570873,
+      "joint_delta": 0.9000696773291565,
+      "individual_delta_i": 0.5306583037599921,
+      "individual_delta_j": 0.7412561384262517
+    },
+    {
+      "layer_i": 18,
+      "layer_j": 19,
+      "interaction_effect": -0.3592431900688098,
+      "joint_delta": 0.6211660323533579,
+      "individual_delta_i": 0.7412561384262517,
+      "individual_delta_j": 0.23915308399591595
+    },
+    {
+      "layer_i": 3,
+      "layer_j": 4,
+      "interaction_effect": -0.35807703202590346,
+      "joint_delta": 0.3683775275712833,
+      "individual_delta_i": 0.31538174056913704,
+      "individual_delta_j": 0.4110728190280497
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 11,
+      "interaction_effect": -0.3360390108427964,
+      "joint_delta": 0.8712889515445568,
+      "individual_delta_i": 0.4110728190280497,
+      "individual_delta_j": 0.7962551433593035
+    },
+    {
+      "layer_i": 5,
+      "layer_j": 7,
+      "interaction_effect": -0.3023378882498946,
+      "joint_delta": 0.6756432464171667,
+      "individual_delta_i": -0.3868176357354969,
+      "individual_delta_j": 1.3647987704025581
+    },
+    {
+      "layer_i": 10,
+      "layer_j": 18,
+      "interaction_effect": -0.2772553611139301,
+      "joint_delta": 0.798935489350697,
+      "individual_delta_i": 0.33493471203837544,
+      "individual_delta_j": 0.7412561384262517
+    },
+    {
+      "layer_i": 10,
+      "layer_j": 17,
+      "interaction_effect": -0.24574883445166051,
+      "joint_delta": 0.619844181346707,
+      "individual_delta_i": 0.33493471203837544,
+      "individual_delta_j": 0.5306583037599921
+    },
+    {
+      "layer_i": 6,
+      "layer_j": 7,
+      "interaction_effect": -0.2114846968324855,
+      "joint_delta": 0.9880176213919185,
+      "individual_delta_i": -0.16529645217815414,
+      "individual_delta_j": 1.3647987704025581
+    },
+    {
+      "layer_i": 26,
+      "layer_j": 27,
+      "interaction_effect": -0.1931559886978107,
+      "joint_delta": -0.7763344633274869,
+      "individual_delta_i": -0.020895192865282297,
+      "individual_delta_j": -0.5622832817643939
+    },
+    {
+      "layer_i": 7,
+      "layer_j": 8,
+      "interaction_effect": -0.1840817459669779,
+      "joint_delta": 0.9129312313816627,
+      "individual_delta_i": 1.3647987704025581,
+      "individual_delta_j": -0.2677857930539176
+    },
+    {
+      "layer_i": 11,
+      "layer_j": 27,
+      "interaction_effect": -0.17843968335751015,
+      "joint_delta": 0.05553217823739942,
+      "individual_delta_i": 0.7962551433593035,
+      "individual_delta_j": -0.5622832817643939
+    },
+    {
+      "layer_i": 10,
+      "layer_j": 11,
+      "interaction_effect": -0.11032796642393805,
+      "joint_delta": 1.0208618889737409,
+      "individual_delta_i": 0.33493471203837544,
+      "individual_delta_j": 0.7962551433593035
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 5,
+      "interaction_effect": -0.06486452052195091,
+      "joint_delta": 1.261430893355282,
+      "individual_delta_i": 1.7131130496127298,
+      "individual_delta_j": -0.3868176357354969
+    }
+  ],
+  "all_interactions": [
+    {
+      "layer_i": 1,
+      "layer_j": 7,
+      "interaction_effect": -1.860815538544557,
+      "interaction_type": "redundant",
+      "joint_delta": 1.217096281470731
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 11,
+      "interaction_effect": -1.4284264122106833,
+      "interaction_type": "redundant",
+      "joint_delta": 1.08094178076135
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 18,
+      "interaction_effect": -1.5357273389672628,
+      "interaction_type": "redundant",
+      "joint_delta": 0.9186418490717188
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 22,
+      "interaction_effect": -1.2780225647584302,
+      "interaction_type": "redundant",
+      "joint_delta": 1.1600691035273485
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 27,
+      "interaction_effect": -0.4635612169877277,
+      "interaction_type": "redundant",
+      "joint_delta": 0.6872685508606082
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 17,
+      "interaction_effect": -1.2609828429849586,
+      "interaction_type": "redundant",
+      "joint_delta": 0.9827885103877634
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 4,
+      "interaction_effect": -0.8372500644618412,
+      "interaction_type": "redundant",
+      "joint_delta": 1.2869358041789383
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 5,
+      "interaction_effect": -0.06486452052195091,
+      "interaction_type": "redundant",
+      "joint_delta": 1.261430893355282
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 10,
+      "interaction_effect": -0.8611537162651075,
+      "interaction_type": "redundant",
+      "joint_delta": 1.1868940453859977
+    },
+    {
+      "layer_i": 7,
+      "layer_j": 11,
+      "interaction_effect": -1.0768478203499399,
+      "interaction_type": "redundant",
+      "joint_delta": 1.0842060934119218
+    },
+    {
+      "layer_i": 7,
+      "layer_j": 18,
+      "interaction_effect": -1.2008935201301938,
+      "interaction_type": "redundant",
+      "joint_delta": 0.9051613886986161
+    },
+    {
+      "layer_i": 7,
+      "layer_j": 22,
+      "interaction_effect": -1.1231772592000198,
+      "interaction_type": "redundant",
+      "joint_delta": 0.9666001298755873
+    },
+    {
+      "layer_i": 7,
+      "layer_j": 27,
+      "interaction_effect": -0.42369360558660674,
+      "interaction_type": "redundant",
+      "joint_delta": 0.3788218830515575
+    },
+    {
+      "layer_i": 7,
+      "layer_j": 17,
+      "interaction_effect": -1.0435399257257814,
+      "interaction_type": "redundant",
+      "joint_delta": 0.8519171484367689
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 7,
+      "interaction_effect": -1.054192795047129,
+      "interaction_type": "redundant",
+      "joint_delta": 0.7216787943834788
+    },
+    {
+      "layer_i": 5,
+      "layer_j": 7,
+      "interaction_effect": -0.3023378882498946,
+      "interaction_type": "redundant",
+      "joint_delta": 0.6756432464171667
+    },
+    {
+      "layer_i": 7,
+      "layer_j": 10,
+      "interaction_effect": -0.920738184300717,
+      "interaction_type": "redundant",
+      "joint_delta": 0.7789952981402166
+    },
+    {
+      "layer_i": 11,
+      "layer_j": 18,
+      "interaction_effect": -0.8128965214491473,
+      "interaction_type": "redundant",
+      "joint_delta": 0.7246147603364079
+    },
+    {
+      "layer_i": 11,
+      "layer_j": 22,
+      "interaction_effect": -0.6712679899646901,
+      "interaction_type": "redundant",
+      "joint_delta": 0.8499657720676623
+    },
+    {
+      "layer_i": 11,
+      "layer_j": 27,
+      "interaction_effect": -0.17843968335751015,
+      "interaction_type": "redundant",
+      "joint_delta": 0.05553217823739942
+    },
+    {
+      "layer_i": 11,
+      "layer_j": 17,
+      "interaction_effect": -0.8424976578971837,
+      "interaction_type": "redundant",
+      "joint_delta": 0.4844157892221119
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 11,
+      "interaction_effect": -0.3360390108427964,
+      "interaction_type": "redundant",
+      "joint_delta": 0.8712889515445568
+    },
+    {
+      "layer_i": 5,
+      "layer_j": 11,
+      "interaction_effect": 0.3971798191778362,
+      "interaction_type": "synergistic",
+      "joint_delta": 0.8066173268016428
+    },
+    {
+      "layer_i": 10,
+      "layer_j": 11,
+      "interaction_effect": -0.11032796642393805,
+      "interaction_type": "redundant",
+      "joint_delta": 1.0208618889737409
+    },
+    {
+      "layer_i": 18,
+      "layer_j": 22,
+      "interaction_effect": -1.008073517412413,
+      "interaction_type": "redundant",
+      "joint_delta": 0.4581612396868877
+    },
+    {
+      "layer_i": 18,
+      "layer_j": 27,
+      "interaction_effect": 0.244873825452828,
+      "interaction_type": "synergistic",
+      "joint_delta": 0.4238466821146858
+    },
+    {
+      "layer_i": 17,
+      "layer_j": 18,
+      "interaction_effect": -0.3718447648570873,
+      "interaction_type": "redundant",
+      "joint_delta": 0.9000696773291565
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 18,
+      "interaction_effect": -0.6224273765546968,
+      "interaction_type": "redundant",
+      "joint_delta": 0.5299015808996046
+    },
+    {
+      "layer_i": 5,
+      "layer_j": 18,
+      "interaction_effect": 0.3503131540128379,
+      "interaction_type": "synergistic",
+      "joint_delta": 0.7047516567035927
+    },
+    {
+      "layer_i": 10,
+      "layer_j": 18,
+      "interaction_effect": -0.2772553611139301,
+      "interaction_type": "redundant",
+      "joint_delta": 0.798935489350697
+    },
+    {
+      "layer_i": 22,
+      "layer_j": 27,
+      "interaction_effect": 0.48850734343068325,
+      "interaction_type": "synergistic",
+      "joint_delta": 0.6512026803393383
+    },
+    {
+      "layer_i": 17,
+      "layer_j": 22,
+      "interaction_effect": -0.5620340839959681,
+      "interaction_type": "redundant",
+      "joint_delta": 0.6936028384370729
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 22,
+      "interaction_effect": -0.39486618313821964,
+      "interaction_type": "redundant",
+      "joint_delta": 0.741185254562879
+    },
+    {
+      "layer_i": 5,
+      "layer_j": 22,
+      "interaction_effect": 0.4478231483954005,
+      "interaction_type": "synergistic",
+      "joint_delta": 0.7859841313329525
+    },
+    {
+      "layer_i": 10,
+      "layer_j": 22,
+      "interaction_effect": -0.04725689813494682,
+      "interaction_type": "independent",
+      "joint_delta": 1.0126564325764775
+    },
+    {
+      "layer_i": 17,
+      "layer_j": 27,
+      "interaction_effect": 0.031164456849637645,
+      "interaction_type": "independent",
+      "joint_delta": -0.00046052115476413746
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 27,
+      "interaction_effect": 0.14651136052384572,
+      "interaction_type": "synergistic",
+      "joint_delta": -0.004699102212498474
+    },
+    {
+      "layer_i": 5,
+      "layer_j": 27,
+      "interaction_effect": 1.3179109009716967,
+      "interaction_type": "synergistic",
+      "joint_delta": 0.36880998347180594
+    },
+    {
+      "layer_i": 10,
+      "layer_j": 27,
+      "interaction_effect": 0.29610356616012723,
+      "interaction_type": "synergistic",
+      "joint_delta": 0.06875499643410876
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 17,
+      "interaction_effect": -0.47190021186543163,
+      "interaction_type": "redundant",
+      "joint_delta": 0.4698309109226102
+    },
+    {
+      "layer_i": 5,
+      "layer_j": 17,
+      "interaction_effect": 0.5749180377169978,
+      "interaction_type": "synergistic",
+      "joint_delta": 0.718758705741493
+    },
+    {
+      "layer_i": 10,
+      "layer_j": 17,
+      "interaction_effect": -0.24574883445166051,
+      "interaction_type": "redundant",
+      "joint_delta": 0.619844181346707
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 5,
+      "interaction_effect": 0.7388085027341731,
+      "interaction_type": "synergistic",
+      "joint_delta": 0.7630636860267259
+    },
+    {
+      "layer_i": 4,
+      "layer_j": 10,
+      "interaction_effect": 0.21582456075702794,
+      "interaction_type": "synergistic",
+      "joint_delta": 0.9618320918234531
+    },
+    {
+      "layer_i": 5,
+      "layer_j": 10,
+      "interaction_effect": 0.6981660757446662,
+      "interaction_type": "synergistic",
+      "joint_delta": 0.6462831520475447
+    },
+    {
+      "layer_i": 0,
+      "layer_j": 1,
+      "interaction_effect": -2.0630240973696345,
+      "interaction_type": "redundant",
+      "joint_delta": -0.11630685094860382
+    },
+    {
+      "layer_i": 1,
+      "layer_j": 2,
+      "interaction_effect": -0.7100960865209345,
+      "interaction_type": "redundant",
+      "joint_delta": 1.2685907985578524
+    },
+    {
+      "layer_i": 6,
+      "layer_j": 7,
+      "interaction_effect": -0.2114846968324855,
+      "interaction_type": "redundant",
+      "joint_delta": 0.9880176213919185
+    },
+    {
+      "layer_i": 7,
+      "layer_j": 8,
+      "interaction_effect": -0.1840817459669779,
+      "interaction_type": "redundant",
+      "joint_delta": 0.9129312313816627
+    },
+    {
+      "layer_i": 11,
+      "layer_j": 12,
+      "interaction_effect": -0.41236872191075236,
+      "interaction_type": "redundant",
+      "joint_delta": 0.5107849214691669
+    },
+    {
+      "layer_i": 18,
+      "layer_j": 19,
+      "interaction_effect": -0.3592431900688098,
+      "interaction_type": "redundant",
+      "joint_delta": 0.6211660323533579
+    },
+    {
+      "layer_i": 21,
+      "layer_j": 22,
+      "interaction_effect": -0.005898654751945287,
+      "interaction_type": "independent",
+      "joint_delta": 0.5972599246888421
+    },
+    {
+      "layer_i": 22,
+      "layer_j": 23,
+      "interaction_effect": 0.0518449806550052,
+      "interaction_type": "synergistic",
+      "joint_delta": 0.6199910503055435
+    },
+    {
+      "layer_i": 26,
+      "layer_j": 27,
+      "interaction_effect": -0.1931559886978107,
+      "interaction_type": "redundant",
+      "joint_delta": -0.7763344633274869
+    },
+    {
+      "layer_i": 16,
+      "layer_j": 17,
+      "interaction_effect": 0.08906631753779948,
+      "interaction_type": "synergistic",
+      "joint_delta": 0.5821700993692502
+    },
+    {
+      "layer_i": 3,
+      "layer_j": 4,
+      "interaction_effect": -0.35807703202590346,
+      "interaction_type": "redundant",
+      "joint_delta": 0.3683775275712833
+    },
+    {
+      "layer_i": 5,
+      "layer_j": 6,
+      "interaction_effect": 1.2247740085804253,
+      "interaction_type": "synergistic",
+      "joint_delta": 0.6726599206667743
+    },
+    {
+      "layer_i": 9,
+      "layer_j": 10,
+      "interaction_effect": 0.7040391608607024,
+      "interaction_type": "synergistic",
+      "joint_delta": 0.9684187793172896
+    }
+  ]
+}

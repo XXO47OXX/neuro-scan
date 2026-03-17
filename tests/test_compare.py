@@ -1,4 +1,3 @@
-"""Tests for multi-model comparison."""
 import json
 
 import numpy as np
@@ -16,7 +15,6 @@ from neuro_scan.compare import (
 
 @pytest.fixture
 def sample_report_a(tmp_path):
-    """32-layer model report."""
     labels = {}
     for i in range(32):
         if i < 3:
@@ -46,7 +44,6 @@ def sample_report_a(tmp_path):
 
 @pytest.fixture
 def sample_report_b(tmp_path):
-    """64-layer model report."""
     labels = {}
     for i in range(64):
         if i < 6:

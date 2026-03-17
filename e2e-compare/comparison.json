@@ -1,0 +1,93 @@
+{
+  "models": [
+    {
+      "name": "Qwen2-1.5B",
+      "total_layers": 28,
+      "baseline_score": 4.04252459097188,
+      "reasoning_layers": [
+        1,
+        4,
+        5,
+        7,
+        10,
+        11,
+        17,
+        18,
+        22,
+        27
+      ],
+      "reasoning_fraction": 0.35714285714285715,
+      "top_important_layers": [
+        1,
+        7,
+        11,
+        18,
+        22,
+        27,
+        17,
+        4,
+        5,
+        10
+      ]
+    },
+    {
+      "name": "Qwen2-1.5B",
+      "total_layers": 28,
+      "baseline_score": 4.69142303429544,
+      "reasoning_layers": [
+        0,
+        1,
+        6,
+        9,
+        10,
+        13,
+        14,
+        17,
+        22,
+        27
+      ],
+      "reasoning_fraction": 0.35714285714285715,
+      "top_important_layers": [
+        0,
+        1,
+        14,
+        27,
+        22,
+        13,
+        6,
+        17,
+        9,
+        10
+      ]
+    }
+  ],
+  "similarity_matrix": [
+    [
+      1.0,
+      0.3905189705085812
+    ],
+    [
+      0.3905189705085812,
+      1.0
+    ]
+  ],
+  "shared_reasoning_layers": {
+    "Qwen2-1.5B vs Qwen2-1.5B": [
+      4,
+      36,
+      61,
+      79,
+      96
+    ]
+  },
+  "model_rankings": [
+    {
+      "model": "Qwen2-1.5B",
+      "mean_sensitivity": 0.46064387982187327
+    },
+    {
+      "model": "Qwen2-1.5B",
+      "mean_sensitivity": 0.38368059974332674
+    }
+  ]
+}

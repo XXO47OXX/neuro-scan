@@ -1,14 +1,3 @@
-"""vLLM inference backend for neuro-scan.
-
-Uses vLLM for model loading with tensor parallelism,
-then accesses the underlying model for layer-level operations
-(ablation, hidden states, attention).
-
-Usage:
-    neuro-scan map --model <path> --backend vllm
-    neuro-scan ablate --model <path> --backend vllm
-"""
-
 from __future__ import annotations
 
 import logging

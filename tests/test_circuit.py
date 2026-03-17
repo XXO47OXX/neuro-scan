@@ -1,5 +1,3 @@
-"""Tests for circuit detection."""
-
 import pytest
 import torch
 

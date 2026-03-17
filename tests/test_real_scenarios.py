@@ -1,8 +1,3 @@
-"""Real-world scenario tests using mock backends.
-
-Tests end-to-end workflows that simulate real model analysis.
-"""
-
 import json
 import pytest
 
@@ -16,7 +11,6 @@ class TestFullMapScenario:
     """Tests for the full map workflow."""
 
     def test_80_layer_model_map(self, mock_backend_large):
-        """Simulate a Qwen2-style 80-layer model scan."""
         from neuro_scan.scanner import run_map
 
         config = NeuroScanConfig(
@@ -35,7 +29,6 @@ class TestFullMapScenario:
         assert len(report.layer_labels) == 80
 
     def test_small_model_map(self, mock_backend_small):
-        """8-layer model should work with minimal layers."""
         from neuro_scan.scanner import run_map
 
         config = NeuroScanConfig(
@@ -52,7 +45,6 @@ class TestFullMapScenario:
         assert len(report.top_important_layers) <= 3
 
     def test_all_outputs_generated(self, mock_backend, tmp_output_dir):
-        """Full map generates all expected output files."""
         from neuro_scan.export import export_csv, export_json
         from neuro_scan.scanner import run_map
         from neuro_scan.visualization import (
@@ -82,7 +74,6 @@ class TestFullMapScenario:
         assert (tmp_output_dir / "ablation.csv").exists()
 
     def test_json_export_valid(self, mock_backend, tmp_output_dir):
-        """Exported JSON is valid and contains expected fields."""
         from neuro_scan.export import export_json
         from neuro_scan.scanner import run_map
 
@@ -100,7 +91,6 @@ class TestFullMapScenario:
         assert len(data["ablation_results"]) == 32
 
     def test_csv_export_valid(self, mock_backend, tmp_output_dir):
-        """Exported CSV has correct structure."""
         from neuro_scan.export import export_csv
         from neuro_scan.scanner import run_map
 
@@ -119,7 +109,6 @@ class TestMultiProbeComparison:
     """Tests comparing different probes on the same model."""
 
     def test_different_probes_complete(self, mock_backend):
-        """All three probes should complete successfully."""
         from neuro_scan.scanner import run_ablation_scan
 
         config = NeuroScanConfig(model_path="mock", batch_size=2)
@@ -135,7 +124,6 @@ class TestCustomProbeScenario:
     """Tests for custom probe file loading and scanning."""
 
     def test_custom_probe_scan(self, mock_backend, sample_probe_json):
-        """Custom probe file should work for ablation scan."""
         from neuro_scan.probes.custom import CustomProbe
         from neuro_scan.scanner import run_ablation_scan
 
@@ -146,7 +134,6 @@ class TestCustomProbeScenario:
         assert len(results) == 32
 
     def test_custom_probe_nonexistent_file(self):
-        """Loading nonexistent probe file should raise."""
         from neuro_scan.probes.custom import CustomProbe
 
         with pytest.raises(FileNotFoundError):

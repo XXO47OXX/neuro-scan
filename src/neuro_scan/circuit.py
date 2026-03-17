@@ -1,16 +1,3 @@
-"""Circuit detection — find synergistic and redundant layer pairs.
-
-Three-phase pipeline:
-1. Select top-K sensitive layers from single-layer ablation
-2. Compute representation similarity to filter candidate pairs
-3. Pairwise ablation to measure interaction effects
-
-Interaction effect = delta(i,j) - delta(i) - delta(j)
-  > 0: synergistic (layers cooperate)
-  < 0: redundant (layers overlap)
-  ≈ 0: independent
-"""
-
 from __future__ import annotations
 
 import logging

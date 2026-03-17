@@ -1,5 +1,3 @@
-"""Tests for cross-probe layer analysis."""
-
 from __future__ import annotations
 
 import numpy as np
@@ -170,7 +168,6 @@ class TestUniversalLayers:
     """Tests for universal layer detection logic."""
 
     def test_all_probes_share_layers(self):
-        """When all probes have the same top layers, all are universal."""
         pr1 = CrossProbeResult(
             probe_name="math",
             baseline_score=4.0,
@@ -189,7 +186,6 @@ class TestUniversalLayers:
         assert universal == [3, 5, 7]
 
     def test_no_shared_layers(self):
-        """When probes have disjoint top layers, no universal layers."""
         pr1 = CrossProbeResult(
             probe_name="math",
             baseline_score=4.0,
@@ -207,7 +203,6 @@ class TestUniversalLayers:
         assert universal == []
 
     def test_partial_overlap(self):
-        """When probes partially overlap, only shared layers are universal."""
         pr1 = CrossProbeResult(
             probe_name="math",
             baseline_score=4.0,
@@ -238,7 +233,6 @@ class TestProbeSpecificLayers:
     """Tests for probe-specific layer detection logic."""
 
     def test_unique_layers_detected(self):
-        """Layers in top-k for exactly one probe are probe-specific."""
         pr1 = CrossProbeResult(
             probe_name="math",
             baseline_score=4.0,
@@ -265,7 +259,6 @@ class TestProbeSpecificLayers:
         assert probe_specific == {"math": [0, 1], "eq": [5, 6]}
 
     def test_no_specific_when_all_shared(self):
-        """No probe-specific layers when all top layers overlap."""
         pr1 = CrossProbeResult(
             probe_name="math",
             baseline_score=4.0,
@@ -292,7 +285,6 @@ class TestProbeSpecificLayers:
         assert probe_specific == {}
 
     def test_three_probes_specificity(self):
-        """With 3 probes, only truly unique layers are probe-specific."""
         pr1 = CrossProbeResult(
             probe_name="math",
             baseline_score=4.0,
@@ -335,7 +327,6 @@ class TestRunCrossProbeAnalysis:
     """Integration tests for run_cross_probe_analysis."""
 
     def test_single_probe(self, mock_backend_small):
-        """Running with a single probe returns valid report."""
         from neuro_scan.config import NeuroScanConfig
         from neuro_scan.probes.math_probe import MathProbe
 
@@ -363,7 +354,6 @@ class TestRunCrossProbeAnalysis:
         assert report.total_time_seconds >= 0
 
     def test_two_probes(self, mock_backend_small):
-        """Running with two probes produces correlation and cross-analysis."""
         from neuro_scan.config import NeuroScanConfig
         from neuro_scan.probes.eq_probe import EqProbe
         from neuro_scan.probes.math_probe import MathProbe
@@ -396,7 +386,6 @@ class TestRunCrossProbeAnalysis:
         )
 
     def test_empty_probes(self, mock_backend_small):
-        """Running with no probes returns empty report."""
         from neuro_scan.config import NeuroScanConfig
 
         config = NeuroScanConfig(
@@ -416,7 +405,6 @@ class TestRunCrossProbeAnalysis:
         assert report.probe_specific_layers == {}
 
     def test_report_per_probe_deltas_match_layers(self, mock_backend_small):
-        """Each probe's ablation_deltas list has length == total_layers."""
         from neuro_scan.config import NeuroScanConfig
         from neuro_scan.probes.math_probe import MathProbe
 
@@ -434,7 +422,6 @@ class TestRunCrossProbeAnalysis:
             assert len(pr.ablation_deltas) == report.total_layers
 
     def test_top_k_respected(self, mock_backend_small):
-        """top_layers has at most top_k entries."""
         from neuro_scan.config import NeuroScanConfig
         from neuro_scan.probes.math_probe import MathProbe
 

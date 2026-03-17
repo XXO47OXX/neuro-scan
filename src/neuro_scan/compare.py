@@ -1,11 +1,3 @@
-"""Multi-model comparison — compare neuroanatomy across models.
-
-Loads multiple neuro-scan report.json files and generates:
-- Side-by-side layer importance comparison
-- Reasoning layer overlap analysis
-- Model similarity score based on ablation profile
-"""
-
 from __future__ import annotations
 
 import json

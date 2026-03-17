@@ -1,9 +1,3 @@
-"""JSON format compliance probe.
-
-Tests the model's ability to follow structured output format instructions,
-which is critical for production LLM pipelines.
-"""
-
 from __future__ import annotations
 
 from neuro_scan.probes.base import Probe, ProbeSample

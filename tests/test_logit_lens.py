@@ -1,5 +1,3 @@
-"""Tests for logit lens analysis."""
-
 import pytest
 import torch
 
@@ -36,27 +34,23 @@ class TestEntropyFromLogits:
     """Tests for entropy computation from logits."""
 
     def test_uniform_distribution(self):
-        """Uniform logits should give maximum entropy."""
         logits = torch.zeros(100)
         ent = entropy_from_logits(logits)
         # log(100) ≈ 4.605
         assert abs(ent - 4.605) < 0.1
 
     def test_peaked_distribution(self):
-        """Peaked distribution should have low entropy."""
         logits = torch.zeros(100)
         logits[0] = 100.0  # Very peaked
         ent = entropy_from_logits(logits)
         assert ent < 0.1
 
     def test_two_equal_peaks(self):
-        """Two equal logits should give log(2) entropy."""
         logits = torch.tensor([0.0, 0.0])
         ent = entropy_from_logits(logits)
         assert abs(ent - 0.693) < 0.01  # ln(2)
 
     def test_handles_inf(self):
-        """Should handle +inf logits without NaN."""
         logits = torch.tensor([float("inf"), 0.0, 0.0])
         ent = entropy_from_logits(logits)
         assert not torch.isnan(torch.tensor(ent))
@@ -67,7 +61,6 @@ class TestEntropyFromLogits:
         assert isinstance(ent, float)
 
     def test_entropy_is_nonnegative(self):
-        """Entropy should always be >= 0."""
         for _ in range(10):
             logits = torch.randn(100)
             ent = entropy_from_logits(logits)

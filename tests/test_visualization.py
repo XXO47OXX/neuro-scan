@@ -1,6 +1,3 @@
-"""Tests for visualization output generation."""
-
-
 from neuro_scan.visualization import (
     generate_ablation_chart,
     generate_attention_heatmap,
@@ -54,7 +51,6 @@ class TestLogitLensHeatmap:
         assert path.suffix == ".html"
 
     def test_empty_trajectory(self, sample_report, tmp_output_dir):
-        """Should handle empty trajectory gracefully."""
         sample_report.logit_lens_trajectory = []
         path = generate_logit_lens_heatmap(
             sample_report, tmp_output_dir / "logit_lens.html"
@@ -81,7 +77,6 @@ class TestAttentionHeatmap:
         assert path.exists()
 
     def test_no_attention_data(self, sample_report, tmp_output_dir):
-        """Should handle None attention data gracefully."""
         sample_report.attention_entropy = None
         path = generate_attention_heatmap(
             sample_report, tmp_output_dir / "attention.html"

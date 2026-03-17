@@ -1,4 +1,3 @@
-"""Tests for Tuned Lens implementation."""
 import pytest
 import torch
 

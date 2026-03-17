@@ -1,8 +1,3 @@
-"""Export neuro-scan results to various formats.
-
-Supports CSV, JSON, and numpy exports for further analysis.
-"""
-
 from __future__ import annotations
 
 import json

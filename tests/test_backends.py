@@ -1,5 +1,3 @@
-"""White-box tests for backend interface and mock backends."""
-
 import pytest
 import torch
 
@@ -64,7 +62,6 @@ class TestMockBackend:
             assert b.get_total_layers() == n
 
     def test_ablation_changes_output(self, mock_backend):
-        """Ablating different layers should produce different outputs."""
         out_no_ablation = mock_backend.forward("test")
         out_ablated = mock_backend.forward_with_ablation("test", [5])
         # With different seeds, outputs should differ

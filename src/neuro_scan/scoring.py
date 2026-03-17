@@ -1,8 +1,4 @@
-"""Logit distribution scoring — reused from layer-scan with neuro-scan extensions.
-
-Core scoring from logit distributions, plus entropy and top-k token utilities
-for logit lens analysis.
-"""
+"""Logit distribution scoring with entropy and top-k token utilities."""
 
 from __future__ import annotations
 
@@ -18,27 +14,7 @@ logger = logging.getLogger(__name__)
 
 @dataclass(frozen=True)
 class ScoreResult:
-    """Result of scoring a single sample from logits.
-
-    Args:
-        expected_score: Weighted average score from the probability distribution.
-        uncertainty: Variance of the score distribution.
-        probabilities: Probability of each score value in the restricted set.
-        raw_logits: The raw logit values for the restricted token set.
-        log_odds: Log-odds of the correct answer token vs all other score tokens.
-            None if correct_answer was not provided.
-        is_correct: Whether argmax of restricted logits == correct_answer.
-            None if correct_answer was not provided.
-        coverage: Sum of probabilities for score tokens in the full vocab
-            distribution. High coverage (>0.5) means the model is genuinely
-            choosing among score tokens; low coverage (<0.1) means digits
-            are noise.
-        full_vocab_entropy: Entropy of the full vocabulary distribution (nats).
-        full_vocab_log_odds: log P(correct) - log P(full_vocab_argmax) from
-            the full vocabulary. None if not computable.
-        top_token: The argmax token from the full vocabulary distribution.
-        top_token_prob: Probability of the top token in the full vocab.
-    """
+    """Result of scoring a single sample from logits."""
 
     expected_score: float
     uncertainty: float
@@ -251,16 +227,7 @@ def get_digit_token_ids(tokenizer) -> tuple[list[int], list[float]]:
 
 @dataclass(frozen=True)
 class AggregateResult:
-    """Aggregated scoring result across multiple samples.
-
-    Args:
-        mean_score: Mean expected score (legacy metric).
-        mean_uncertainty: Mean variance of score distributions.
-        mean_log_odds: Mean log-odds of correct answer. None if no samples
-            have correct_answer annotations.
-        accuracy: Fraction of samples where argmax == correct_answer.
-            None if no samples have correct_answer annotations.
-    """
+    """Aggregated scoring result across multiple samples."""
 
     mean_score: float
     mean_uncertainty: float

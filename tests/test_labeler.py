@@ -1,6 +1,3 @@
-"""Tests for automatic layer-function labeling."""
-
-
 from neuro_scan.config import AblationResult
 from neuro_scan.labeler import (
     LABEL_EARLY_PROCESSING,
@@ -19,7 +16,6 @@ class TestLabelLayers:
     """Tests for the label_layers function."""
 
     def test_basic_position_labeling(self):
-        """Without ablation data, uses position-based heuristics."""
         labels = label_layers(total_layers=32, ablation_results=[])
 
         # First ~10% should be early_processing
@@ -31,12 +27,10 @@ class TestLabelLayers:
         assert labels[29] == LABEL_OUTPUT
 
     def test_middle_layers_are_semantic(self):
-        """Middle layers default to semantic_processing."""
         labels = label_layers(total_layers=32, ablation_results=[])
         assert labels[15] == LABEL_SEMANTIC
 
     def test_ablation_overrides_to_reasoning(self, sample_ablation_results):
-        """Top-k sensitive layers should be labeled as reasoning."""
         labels = label_layers(
             total_layers=32,
             ablation_results=sample_ablation_results,
@@ -50,7 +44,6 @@ class TestLabelLayers:
     def test_logit_lens_adds_syntax_labels(
         self, sample_ablation_results, sample_logit_lens_trajectory
     ):
-        """Logit lens should create syntax labels before emergence."""
         labels = label_layers(
             total_layers=32,
             ablation_results=sample_ablation_results,
@@ -62,7 +55,6 @@ class TestLabelLayers:
         assert len(all_labels) >= 3
 
     def test_all_layers_labeled(self, sample_ablation_results):
-        """Every layer should have a label."""
         labels = label_layers(
             total_layers=32,
             ablation_results=sample_ablation_results,
@@ -72,18 +64,15 @@ class TestLabelLayers:
             assert i in labels
 
     def test_small_model(self):
-        """Model with very few layers should still work."""
         labels = label_layers(total_layers=4, ablation_results=[])
         assert len(labels) == 4
 
     def test_single_layer(self):
-        """Edge case: single layer model."""
         labels = label_layers(total_layers=1, ablation_results=[])
         assert len(labels) == 1
         assert 0 in labels
 
     def test_large_model(self):
-        """80-layer model should distribute labels properly."""
         results = [
             AblationResult(layer_idx=i, score=4.0, score_delta=0.1 * (i % 10), uncertainty=0.1)
             for i in range(80)
@@ -100,7 +89,6 @@ class TestLabelLayers:
         assert LABEL_OUTPUT in label_counts
 
     def test_top_k_parameter(self, sample_ablation_results):
-        """Changing top_k should change number of reasoning labels."""
         labels_k3 = label_layers(
             total_layers=32,
             ablation_results=sample_ablation_results,

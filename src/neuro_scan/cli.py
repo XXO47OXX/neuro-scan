@@ -1,15 +1,3 @@
-"""CLI entry point for neuro-scan.
-
-Usage:
-    neuro-scan ablate --model <path> --probe math
-    neuro-scan logit-lens --model <path> --probe math
-    neuro-scan attention --model <path> --probe math
-    neuro-scan map --model <path> --probe math
-    neuro-scan prompt-repeat --model <path> --probe math --repeat-counts 1,2,3,4
-    neuro-scan probes
-    neuro-scan version
-"""
-
 from __future__ import annotations
 
 import logging

@@ -1,5 +1,3 @@
-"""Tests for vLLM backend (mocked — no actual vLLM required)."""
-
 from __future__ import annotations
 
 from unittest.mock import MagicMock, patch
@@ -10,7 +8,6 @@ import torch
 
 class TestVLLMBackendImport:
     def test_import_error_without_vllm(self):
-        """VLLMBackend.load() raises ImportError when vllm not installed."""
         from neuro_scan.backends.vllm_backend import VLLMBackend
 
         backend = VLLMBackend()
@@ -60,7 +57,6 @@ class TestVLLMBackendInterface:
 class TestVLLMBackendWithMock:
     @pytest.fixture
     def mock_vllm_backend(self):
-        """Create a VLLMBackend with mocked internals."""
         from neuro_scan.backends.vllm_backend import VLLMBackend
 
         backend = VLLMBackend()

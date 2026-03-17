@@ -1,9 +1,3 @@
-"""Core neuroanatomy scanning engine.
-
-Orchestrates ablation scans, logit lens analysis, and attention entropy
-computation to build a complete NeuroReport.
-"""
-
 from __future__ import annotations
 
 import time

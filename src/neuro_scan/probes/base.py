@@ -1,5 +1,3 @@
-"""Base probe interface for neuro-scan evaluations."""
-
 from __future__ import annotations
 
 from abc import ABC, abstractmethod
@@ -8,18 +6,7 @@ from dataclasses import dataclass
 
 @dataclass(frozen=True)
 class ProbeSample:
-    """A single evaluation sample.
-
-    Args:
-        prompt: The input text to feed to the model.
-        scoring_suffix: Text that should precede the scoring token position.
-            The model scores the next token after prompt + scoring_suffix.
-        expected_score: Ground truth score (for reference/validation).
-        correct_answer: The correct digit (0-9) the model should output.
-            Used by log-odds scoring to measure actual correctness.
-            None means no ground truth is available for this sample.
-        metadata: Additional sample info (source, difficulty, category).
-    """
+    """A single evaluation sample."""
 
     prompt: str
     scoring_suffix: str = ""

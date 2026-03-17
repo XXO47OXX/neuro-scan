@@ -1,5 +1,3 @@
-"""Shared fixtures for neuro-scan tests."""
-
 from __future__ import annotations
 
 import json

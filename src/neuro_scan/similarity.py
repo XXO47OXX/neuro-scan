@@ -1,9 +1,3 @@
-"""Layer similarity and Block Influence metrics.
-
-Computes cosine similarity between layer hidden states and Block Influence
-(ShortGPT, ACL 2025) scores — all from a single forward pass.
-"""
-
 from __future__ import annotations
 
 import logging

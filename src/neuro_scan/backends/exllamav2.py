@@ -1,12 +1,3 @@
-"""ExLlamaV2 backend — optimized for consumer GPUs with quantized models.
-
-Provides ablation and hidden state extraction for quantized models.
-Attention weight extraction is experimental and may not be supported
-by all ExLlamaV2 versions.
-
-Requires: pip install neuro-scan[exllamav2]
-"""
-
 from __future__ import annotations
 
 import logging

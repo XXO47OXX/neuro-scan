@@ -1,10 +1,3 @@
-"""Tuned Lens — per-layer affine probes for improved logit lens.
-
-Native implementation of Belrose et al. 2023. Instead of applying the
-final-layer RMSNorm to all layers (vanilla logit lens), we learn
-A_l * h_l + b_l per layer to minimize KL(tuned_logits || final_logits).
-"""
-
 from __future__ import annotations
 
 import logging

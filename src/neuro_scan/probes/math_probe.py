@@ -1,12 +1,3 @@
-"""Math reasoning probe based on RYS evaluation methodology.
-
-Tests the model's ability to perform mathematical estimation and reasoning,
-which is the capability most improved by layer duplication.
-
-Scoring: Model rates its confidence/answer on a 0-9 scale using logit
-distribution over digit tokens.
-"""
-
 from __future__ import annotations
 
 from neuro_scan.probes.base import Probe, ProbeSample
